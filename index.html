@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<h1>Калькулятор стоимости заказа</h1>
+<form class="form">
+    <p>Введите количество товара: </p>
+    <input
+            type="text"
+            id = "second_value"
+            value=""
+            placeholder="count"
+    >
+    <h2 class="subtitle">Select Type:</h2>
+    <select class="form__select" name="type" id="select">
+        <option value="1" id="firstProduct">Первый тип</option>
+        <option value="2" id="secondProduct">Второй тип</option>
+        <option value="3" id="thirdProduct">Третий тип</option>
+    </select>
+    <div class="form__radios" id="second_product_r">
+        <input type="radio" name="s_p_s" id="second_product_Sets" />
+        <input type="radio" name="s_p_s" value="first" /> Первый комплект
+        <input type="radio" name="s_p_s" value="second" /> Второй комплект
+        <input type="radio" name="s_p_s" value="third" /> Третий комплект
+    </div>
+    <div class="form__checkboxes" id="third_options">
+        <input type="checkbox" name="firstS" id="firstS" /> Первое свойство
+        <input type="checkbox" name="secondS" id="secondS" /> Второе свойство
+    </div>
+    <br/>
+</form>
+<br>
+<h2 id="price" class="start-price"></h2>
+<script src="main.js"></script>
+</body>
+</html>
